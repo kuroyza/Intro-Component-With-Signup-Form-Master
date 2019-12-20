@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+:root {
+   --primary-red: hsl(0, 100%, 74%);
+   --primary-green-light: hsl(154, 49%, 51%);
+   --primary-green: hsl(154, 59%, 51%);
+   --primary-green-dark: hsl(154, 69%, 36%);
+   --secondary: hsl(248, 32%, 49%);
+   --dark-blue: hsl(249, 10%, 26%);
+   --grayish-blue: hsl(246, 25%, 77%);
+}
+
+*,
+*::after,
+*::before {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+html {
+   font-size: 16px;
+}
+
+body {
+   font-family: 'Poppins', sans-serif;
+   width: 100%;
+   height: 100vh;
+   background-color: var(--primary-red);
+   background-image: url(images/bg-intro-desktop.png);
+   background-size: cover;
+   background-position: center;
+   padding: 0 11%;
+}
+
+/* SIGN UP CONTAINER*/
+.signup {
+   width: 100%;
+   height: 100%;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   justify-items: center;
+   align-items: center;
+   grid-column-gap: 60px;
+}
+
+/* HERO CONTAINER (LEFT)*/
+.signup__hero {
+   text-align: left;
+   color: #FFF;
+}
+
+.signup__hero--title {
+   font-size: 45px;
+   line-height: 1.1;
+   margin-bottom: 25px;
+}
+
+/* FORM CONTAINER (RIGHT)*/
+.signup__form {
+   width: 100%;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.signup__form--heading {
+   font-size: 14px;
+   margin-bottom: 25px;
+   border-radius: 8px;
+   background-color: var(--secondary);
+   padding: 3% 7%;
+   width: 100%;
+   box-shadow: 0 7px 0 rgba(0, 0, 0, .2);
+   color: var(--grayish-blue);
+   font-weight: 400;
+}
+
+.signup__form--heading-text span {
+   color: #FFF;
+   font-weight: 600;
+}
+
+.signup__form--box {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: #FFF;
+   border-radius: 8px;
+   width: 100%;
+   padding: 7%;
+   box-shadow: 0 7px 0 rgba(0, 0, 0, .2);
+}
+
+.signup__form--input-field,
+.signup__form--submit {
+   width: 100%;
+   border: 0;
+   outline: 0;
+}
+
+.signup__form--input {
+   width: 100%;
+   position: relative;
+   margin-bottom: 20px;
+}
+
+.signup__form--input-field {
+   padding: 15px 30px;
+   border-radius: 6px;
+   border: 1px solid var(--grayish-blue);
+   color: var(--dark-blue);
+   font-family: inherit;
+   font-size: 14px;
+   font-weight: 700;
+   transition: all .3s;
+}
+
+.signup__form--input-field:focus {
+   border-color: var(--dark-blue);
+}
+
+.error-icon {
+   position: absolute;
+   right: 15px;
+   top: 15px;
+   width: 24px;
+   height: 24px;
+   display: none;
+}
+
+.error-warning {
+   margin-top: 8px;
+   display: block;
+   width: 100%;
+   text-align: right;
+   font-size: 10px;
+   font-style: italic;
+   font-weight: 500;
+   color: var(--primary-red)
+}
+
+.btn {
+   text-decoration: none;
+   transition: all .3s;
+}
+
+.signup__form--submit {
+   margin-bottom: 18px;
+   padding: 15px;
+   font-size: 14px;
+   text-transform: uppercase;
+   font-weight: 600;
+   letter-spacing: 1px;
+   background-color: var(--primary-green);
+   color: #FFF;
+   border-radius: 6px;
+   box-shadow: 0 4px 0 var(--primary-green-dark);
+   cursor: pointer;
+   transition: all .3s;
+}
+
+.signup__form--submit:hover {
+   background-color: var(--primary-green-light);
+}
+
+.signup__form--submit:active {
+   box-shadow: 0 0 0 var(--primary-green-dark);
+   transform: translateY(4px);
+}
+
+.signup__form--terms {
+   font-size: 10px;
+   font-weight: 600;
+   color: var(--grayish-blue);
+}
+
+.signup__form--terms a {
+   font-weight: 700;
+   color: var(--primary-red);
+   display: inline-block;
+   position: relative;
+}
+
+.signup__form--terms a::after {
+   content: '';
+   position: absolute;
+   left: 0;
+   bottom: 1px;
+   background-color: currentColor;
+   height: 1px;
+   width: 0;
+   transition: all .3s;
+}
+
+.signup__form--terms a:hover::after {
+   width: 100%;
+}
+
+
+.attribution {
+   font-size: 11px;
+   text-align: center;
+}
+
+.attribution a {
+   color: hsl(228, 45%, 44%);
+}

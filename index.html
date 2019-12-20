@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="signup">
+
+    <div class="signup__hero">
+      <h1 class="signup__hero--title">Learn to code by watching others</h1>
+
+      <p class="signup__hero--paragraph">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.
+      </p>
+    </div>
+
+
+    <div class="signup__form">
+      <div class="signup__form--heading">
+        <p class="signup__form--heading-text">
+          <span>Try it free 7 days</span> then $20/mo. thereafter
+        </p>
+      </div>
+
+      <form action="#" method="post" class="signup__form--box">
+        <div class="signup__form--input">
+          <input type="text" placeholder="First Name" class="signup__form--input-field">
+          <svg class="error-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+            <g fill="none" fill-rule="evenodd">
+              <circle fill="#FF7979" cx="12" cy="12" r="12" />
+              <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+              <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+            </g>
+          </svg>
+          <label class="error-warning" data-for="First Name"></label>
+        </div>
+
+        <div class="signup__form--input">
+          <input type="text" placeholder="Last Name" class="signup__form--input-field">
+          <svg class="error-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+            <g fill="none" fill-rule="evenodd">
+              <circle fill="#FF7979" cx="12" cy="12" r="12" />
+              <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+              <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+            </g>
+          </svg>
+          <label class="error-warning" data-for="Last Name"></label>
+        </div>
+
+
+        <div class="signup__form--input">
+          <input type="email" placeholder="Email Address" class="signup__form--input-field">
+          <svg class="error-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+            <g fill="none" fill-rule="evenodd">
+              <circle fill="#FF7979" cx="12" cy="12" r="12" />
+              <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+              <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+            </g>
+          </svg>
+          <label class="error-warning" data-for="Email Address"></label>
+        </div>
+
+        <div class="signup__form--input">
+          <input type="passowrd" placeholder="Password" class="signup__form--input-field">
+          <svg class="error-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+            <g fill="none" fill-rule="evenodd">
+              <circle fill="#FF7979" cx="12" cy="12" r="12" />
+              <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+              <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+            </g>
+          </svg>
+          <label class="error-warning" data-for="Password"></label>
+        </div>
+
+        <button class="btn signup__form--submit">
+          Claim your free trial
+        </button>
+        <p class="signup__form--terms">By clicking the button, you are agreeing to our <a href="#"
+            class="btn btn__text">Terms and Services</a></p>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https:instagram.com/kuroyza">Kuroyza</a>.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
