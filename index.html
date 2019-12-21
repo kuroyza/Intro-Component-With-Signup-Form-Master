@@ -35,7 +35,8 @@
 
       <form action="#" method="post" class="signup__form--box">
         <div class="signup__form--input">
-          <input type="text" placeholder="First Name" class="signup__form--input-field">
+          <input type="text" placeholder="First Name" name="First Name" id="FirstName"
+            class="signup__form--input-field">
           <svg class="error-icon" xmlns="http://www.w3.org/2000/svg">
             <g fill="none" fill-rule="evenodd">
               <circle fill="#FF7979" cx="12" cy="12" r="12" />
@@ -43,11 +44,11 @@
               <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
             </g>
           </svg>
-          <label class="error-warning" data-for="First Name"></label>
+          <label for="FirstName" class="error-warning" data-for="First Name"></label>
         </div>
 
         <div class="signup__form--input">
-          <input type="text" placeholder="Last Name" class="signup__form--input-field">
+          <input type="text" placeholder="Last Name" name="Last Name" id="LastName" class="signup__form--input-field">
           <svg class="error-icon" xmlns="http://www.w3.org/2000/svg">
             <g fill="none" fill-rule="evenodd">
               <circle fill="#FF7979" cx="12" cy="12" r="12" />
@@ -55,12 +56,13 @@
               <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
             </g>
           </svg>
-          <label class="error-warning" data-for="Last Name"></label>
+          <label for="LastName" class="error-warning" data-for="Last Name"></label>
         </div>
 
 
         <div class="signup__form--input">
-          <input type="email" placeholder="Email Address" class="signup__form--input-field">
+          <input type="email" placeholder="Email Address" name="Email Address" id="EmailAddress"
+            class="signup__form--input-field">
           <svg class="error-icon" xmlns="http://www.w3.org/2000/svg">
             <g fill="none" fill-rule="evenodd">
               <circle fill="#FF7979" cx="12" cy="12" r="12" />
@@ -68,11 +70,11 @@
               <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
             </g>
           </svg>
-          <label class="error-warning" data-for="Email Address"></label>
+          <label for="EmailAddress" class="error-warning" data-for="Email Address"></label>
         </div>
 
         <div class="signup__form--input">
-          <input type="passowrd" placeholder="Password" class="signup__form--input-field">
+          <input type="passowrd" placeholder="Password" id="Password" name="Password" class="signup__form--input-field">
           <svg class="error-icon" xmlns="http://www.w3.org/2000/svg">
             <g fill="none" fill-rule="evenodd">
               <circle fill="#FF7979" cx="12" cy="12" r="12" />
@@ -80,7 +82,7 @@
               <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
             </g>
           </svg>
-          <label class="error-warning" data-for="Password"></label>
+          <label for="Password" class="error-warning" data-for="Password"></label>
         </div>
 
         <button class="btn signup__form--submit">
