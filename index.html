@@ -74,7 +74,8 @@
         </div>
 
         <div class="signup__form--input">
-          <input type="passowrd" placeholder="Password" id="Password" name="Password" class="signup__form--input-field">
+          <input type="passowrd" placeholder="Password" id="Password" aria-label="Passowrd" aria-labelledby="passowrd-label" name="Password"
+            class="signup__form--input-field">
           <svg class="error-icon" xmlns="http://www.w3.org/2000/svg">
             <g fill="none" fill-rule="evenodd">
               <circle fill="#FF7979" cx="12" cy="12" r="12" />
@@ -82,7 +83,7 @@
               <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
             </g>
           </svg>
-          <label for="Password" class="error-warning" data-for="Password"></label>
+          <label for="Password" id="password-label" class="error-warning" data-for="Password"></label>
         </div>
 
         <button class="btn signup__form--submit">
