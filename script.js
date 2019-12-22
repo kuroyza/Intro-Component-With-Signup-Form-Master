@@ -10,8 +10,6 @@
 
 
    form.addEventListener('submit', e => {
-      alert('Submited');
-
       // Check Empty fields
 
       let goodToGo = true;
@@ -20,10 +18,6 @@
          const currentField = field.querySelector('input');
          const currentErrorLabel = field.querySelector('label');
          const currentErrorIcon = field.querySelector('svg');
-
-         console.log('HAMZA: ', currentField);
-         console.log('HAMZA: ', currentErrorLabel);
-         console.log('HAMZA: ', currentErrorIcon);
 
          if (currentField.value.trim() == '') {
             goodToGo = false;
